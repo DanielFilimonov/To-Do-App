@@ -151,3 +151,36 @@ button {
 	margin: 0 10px;
 	cursor: pointer;
 }
+
+@media (max-width: 530px) {
+	.app-container {
+		margin-inline: 5% 5%;
+	}
+}
+
+@media (max-width: 410px) {
+	.stats-container {
+		align-items: center;
+	}
+	.description-header {
+		display: none;
+	}
+}
+@media (max-width: 320px) {
+	#numbers {
+		width: 60px;
+		height: 60px;
+		font-size: 20px;
+	}
+	.stats-container {
+		padding: 15px;
+	}
+}
+@media (max-width: 265px) {
+	.motivation-text {
+		display: none;
+	}
+	#progressBar {
+		margin: auto;
+	}
+}
