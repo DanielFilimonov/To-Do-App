@@ -15,11 +15,11 @@
 
 body {
 	font-family: "Jost", sans-serif;
-	background: url(/img/bg.jpg)  no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+	background: url(/img/bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	color: var(--textColor);
 }
 
@@ -72,7 +72,6 @@ body {
 	border-radius: 50%;
 	font-size: 30px;
 	font-weight: bold;
-	
 }
 
 form {
@@ -85,6 +84,7 @@ form {
 input {
 	flex: 1;
 	padding: 16px;
+	font-size: 16px;
 	background: var(--secondaryBg);
 	border: 1px solid var(--purple);
 	border-radius: 10px;
@@ -95,8 +95,8 @@ input {
 
 button {
 	padding: 16px;
-	width: 50px;
-	height: 50px;
+	width: 60px;
+	height: 60px;
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
@@ -132,17 +132,30 @@ button {
 	display: flex;
 	align-items: center;
 	gap: 10px;
+	width: 100%;
 }
 
-.task input {
-	width: 20px;
+.task input[type="checkbox"] {
+	max-width: 20px;
 	height: 20px;
+}
+
+.task-input {
+
+	height: 20px;
+	font-size: 16px;
+	outline: none;
+}
+
+.icons {
+	display: flex;
+	align-items: center;
+	gap: 0;
 }
 
 .task.completed {
 	text-decoration: line-through;
 	color: var(--teal);
-	
 }
 
 .taskItem img {
@@ -150,6 +163,11 @@ button {
 	height: 24px;
 	margin: 0 10px;
 	cursor: pointer;
+}
+
+#checkCircle {
+	margin: -3px 10px;
+	height: 27px;
 }
 
 @media (max-width: 530px) {
@@ -165,6 +183,12 @@ button {
 	.description-header {
 		display: none;
 	}
+	.task-input {
+	height: 20px;
+	font-size: 12px;
+	outline: none;
+	display: flex;
+}
 }
 @media (max-width: 320px) {
 	#numbers {
@@ -175,6 +199,27 @@ button {
 	.stats-container {
 		padding: 15px;
 	}
+	input {
+		font-size: 12px;
+	}
+	.taskItem img {
+		margin: 0 5px;
+		font-size: 12px;
+	}
+	.checkbox p {
+		font-size: 12px;
+	}
+}
+@media (max-width: 282px) {
+.taskItem img {
+		margin: 0 
+	}
+	.taskItem  {
+		gap: 4px 
+	}
+	#checkCircle {
+		margin: 0;
+	}
 }
 @media (max-width: 265px) {
 	.motivation-text {
@@ -182,5 +227,8 @@ button {
 	}
 	#progressBar {
 		margin: auto;
+	}
+	.taskItem p {
+		font-size: 12px;
 	}
 }
