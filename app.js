@@ -1,4 +1,5 @@
 "use strict";
+
 document.addEventListener("DOMContentLoaded", () => {
 	const storedTasks = JSON.parse(localStorage.getItem("tasks"));
 
@@ -103,9 +104,7 @@ const updateTasksList = () => {
             </div>
         </div>          
         `;
-			taskList.append(listItem);
-
-		
+		taskList.append(listItem);
 	});
 };
 
