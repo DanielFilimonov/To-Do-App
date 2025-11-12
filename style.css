@@ -15,7 +15,7 @@
 
 body {
 	font-family: "Jost", sans-serif;
-	background: url(./img/bg.jpg) no-repeat center center fixed;
+	background-color: var(--background);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -141,7 +141,6 @@ button {
 }
 
 .task-input {
-
 	height: 20px;
 	font-size: 16px;
 	outline: none;
@@ -184,11 +183,11 @@ button {
 		display: none;
 	}
 	.task-input {
-	height: 20px;
-	font-size: 12px;
-	outline: none;
-	display: flex;
-}
+		height: 20px;
+		font-size: 12px;
+		outline: none;
+		display: flex;
+	}
 }
 @media (max-width: 320px) {
 	#numbers {
@@ -211,11 +210,11 @@ button {
 	}
 }
 @media (max-width: 282px) {
-.taskItem img {
-		margin: 0 
+	.taskItem img {
+		margin: 0;
 	}
-	.taskItem  {
-		gap: 4px 
+	.taskItem {
+		gap: 4px;
 	}
 	#checkCircle {
 		margin: 0;
